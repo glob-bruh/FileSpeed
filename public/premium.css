@@ -1,0 +1,20 @@
+p {
+	text-align: center;
+}
+a {
+	color: white;
+}
+a:hover {
+	color: red;
+}
+div {
+	display: flex;
+}
+article {
+	flex: 50%;
+}
+@media screen and (max-width: 720px) {
+	.articlepic {
+		display: none;
+	}
+}
