@@ -10,6 +10,8 @@ FileSpeed was created for a midterm project. This version has been modified to r
 
 ## Setup:
 
+### Initial Setup:
+
 1) Download the FileSpeed website source files.
 2) Download, install and configure PHP and a web server of your choice.
 3) Copy the website to the web root directory.
@@ -18,9 +20,20 @@ FileSpeed was created for a midterm project. This version has been modified to r
     - Ensure that all content in the `/uploads/` folder cannot be executed by the server.
 5) Test the website by uploading a file.
 
-The log file is stored at `/configuration/log.txt`.
+### Configuring Website:
+All configurable files can be found in the `/configuration/` folder.
 
-If you wish to test the file blacklist (and the SHA1 hash for the blacklist test file is still in `badfilesha1.txt`), you can upload the file at `/other/FileSpeed-Blacklist-Test.txt` and the website should tell you that the file is banned.
+**bannedSHA1.txt:** 
+- Contains a list of all banned files SHA1 hashes. 
+- If you wish to not ban any files (SHA1 hashes), leave the file blank.
+- If you wish to test the file blacklist (and the SHA1 hash for the blacklist test file is still in `badfilesha1.txt`), you can upload the file at `/other/FileSpeed-Blacklist-Test.txt` and the website should tell you that the file is banned.
+
+**bannedExtension.txt:**
+- Contains a list of all banned file extensions.  
+- If you do not ban any file extensions, leave the file blank.
+- If you wish to now allow any files that do not contain an extension, then add `NoExt` to the list. 
+
+The log file is stored at `/configuration/log.txt`.
 
 ## Backend Architecture:
 
