@@ -18,6 +18,9 @@ FileSpeed was created for a midterm project. This version has been modified to r
 4) Set permissions:
     - Ensure the `/configuration/` folder is not accessible to the public.
     - Ensure that all content in the `/uploads/` folder cannot be executed by the server.
+    - This can be done automatically by placing the following files on web root:
+        * WINDOWS: `/other/windows-web.config/web.config`.
+        * LINUX: No file.
 5) Test the website by uploading a file.
 
 ### Configuring Website:
